@@ -1,7 +1,11 @@
-body{background-color: #FCEBB6; color: #221811; font-family : Verdana, Arial, sans-serif; }
+body{background-color: #FCEBB6; color: #221811; font-family : Verdana, Arial, Geneva; }
 
-h1{background-color: #D2B48C; text-align: center; line-height: 200%; }
+header{background-color: #D2B48C; text-align: center;}
+
+h1{line-height: 200%;}
 
 nav{text-align: center; font-weight: bold; }
 
-footer{ background-color: #D2B48C; font-size: 0.70em; font-family: italic; text-align: center; }
+footer{ background-color: #D2B48C; font-size: 0.60em; font-family: italic, Arial, Geneva; text-align: center; }
+
+#wrapper { width: 80%; margin-right: auto; margin-left: auto; }
