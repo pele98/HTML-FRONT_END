@@ -1,32 +1,17 @@
-body{color: #221811; font-family : Verdana, Arial, Geneva;
- background-image: url("https://media.giphy.com/media/csxFkwNtvgcSPWalEr/giphy.gif");
- background-repeat: no-repeat; background-size: cover;}
+body{background-color: #FCEBB6; color: #221811; font-family : Verdana, Arial, Geneva;
+ background-image: url("waterfall.jpg"); background-size: cover; }
 
-header{background-color: #D2B48C80; text-align: center;
- height:100%; width: 100%;  }
+header{ text-align: center; text-shadow: 3px 3px 5px #00000090;  background-color: #00000020;}
 
-h1{line-height: 200%; border: 5px; border-style:dotted;}
+h1{line-height: 200%; background-color : #D2B48C80}
 
-nav{text-align: center; font-weight: bold;
- border-width:20px;
- border-style: solid;
- border-image:url(test.png) 20 round;}
+nav{text-align: center; font-weight: bold }
 
-@keyframes test {
-0% {background-color: #D2B48CFF;}
-50% {background-color: #D2B48C00;}
-100% {background-color: #D2B48CFF;}
-}
-footer{font-size: 0.60em; 
- font-family: italic, Arial, Geneva; text-align: center; 
- height:auto;width:100%; background-color:#D2B48CFF;
- animation-name: test;
- animation-duration: 2s;
- animation-iteration-count: infinite;
- }
+main{margin-left: 10px}
 
-#wrapper { width: 80%; margin-right: auto; margin-left: auto; text-shadow:0px 1px 1px #FCEBB6; 
- height: auto;
- background-color:#00000000;
- background-image: linear-gradient(#D2B48CFF, #D2B48C00);}
-header:hover{width:120%;}
+footer{ font-size: 0.60em; font-family: italic, Arial, Geneva; text-align: center; font-weight: bold; }
+
+#wrapper {background-color: #72bb97AF; width: 80%; margin-right: auto; margin-left: auto; }
+
+img.cup {vertical-align: text-bottom; }
+
