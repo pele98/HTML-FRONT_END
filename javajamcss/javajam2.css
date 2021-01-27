@@ -2,7 +2,7 @@ body{color: #221811; font-family : Verdana, Arial, Geneva;
  background-image: url("https://media.giphy.com/media/csxFkwNtvgcSPWalEr/giphy.gif");
  background-repeat: no-repeat; background-size: cover;}
 
-header{background-color: #D2B48C80; text-align: center;
+header{background-color: #D2B48C30; text-align: center;
  height:100%; width: 100%;  }
 
 h1{line-height: 200%; border: 5px; border-style:dotted;}
@@ -29,4 +29,4 @@ footer{font-size: 0.60em;
  height: auto;
  background-color:#00000000;
  background-image: linear-gradient(#D2B48CFF, #D2B48C00);}
-header:hover{width:120%;}
+header:hover{width:120%; background-color: #D2B68C;}
