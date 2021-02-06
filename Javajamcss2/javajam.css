@@ -7,10 +7,11 @@ header{height: 150px;background-color: #D2B48C;
 
 h1{padding: 45px 0px 0px 220px;
 font-size: 3em;}
+
 h4{background-color: #D2B48C; font-size: 1.2em; padding: 0px 10px 5px;}
 
 nav{text-align: center; font-weight: bold; font-size: 1.5em; padding: 10px;}
-nav a {text-decoration: none}
+nav a {text-decoration: none;}
 
 main{margin-left: 10px; padding: 0em 2em 2em 2em; display: block;}
 
@@ -21,8 +22,8 @@ background-color: #D2B48C; padding: 0px 0px 10px; border-top: solid 2px #221811;
  width: 80%; margin-right: auto; margin-left: auto; 
 box-shadow:3px 3px 3px #000000;}
 
-img.cup {vertical-align: text-bottom; }
-.details{padding: 0% 20% 0% 20%;}
+.details {padding: 0% 20% 0% 20%;}
+
 img{padding: 0px 10px 0px 10px;}
 
 
