@@ -1,17 +1,20 @@
-body{background-color: #FCEBB6; color: #221811; font-family : Verdana, Arial, Geneva;
- background-image: url("waterfall.jpg"); background-size: cover; }
+body{background-color: #EADDA9; color: #221811; font-family : Verdana, Arial, Geneva;}
 
-header{ text-align: center; text-shadow: 3px 3px 5px #00000090;  background-color: #00000020;}
+header{ text-align: center; background-color: #D2B48C;}
 
-h1{line-height: 200%; background-color : #D2B48C80}
+h1{line-height: 200%; background-color : #D2B48C;
+ background-image: url(images/favicon.ico); background-repeat: no-repeat;
+ background-size: 64px 64px;}
 
 nav{text-align: center; font-weight: bold }
 
 main{margin-left: 10px}
 
-footer{ font-size: 0.60em; font-family: italic, Arial, Geneva; text-align: center; font-weight: bold; }
+footer{ font-size: 0.60em; font-family: italic, Arial, Geneva; text-align: center; font-weight: bold;
+background-color: #D2B48C;}
 
-#wrapper {background-color: #72bb97AF; width: 80%; margin-right: auto; margin-left: auto; }
+#wrapper {background-color: #FCEBB6; width: 80%; margin-right: auto; margin-left: auto; 
+box-shadow:3px 3px 3px #000000;}
 
 img.cup {vertical-align: text-bottom; }
 
