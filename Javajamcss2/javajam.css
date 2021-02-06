@@ -1,19 +1,22 @@
 body{background-color: #EADDA9; color: #221811; font-family : Verdana, Arial, Geneva;}
 
-header{ text-align: center; background-color: #D2B48C;}
+header{height: 150px;background-color: #D2B48C;
+ background-image: url(images/background.jpg); background-repeat: no-repeat;
+ background-size: 150px 150px;}
 
-h1{line-height: 200%; background-color : #D2B48C;
- background-image: url(images/favicon.ico); background-repeat: no-repeat;
- background-size: 64px 64px;}
+h1{padding: 45px 0px 0px 220px;
+font-size: 3em;}
 
-nav{text-align: center; font-weight: bold }
+nav{text-align: center; font-weight: bold; font-size: 1.5em; padding: 10px;}
+nav a {text-decoration: none}
 
 main{margin-left: 10px}
 
 footer{ font-size: 0.60em; font-family: italic, Arial, Geneva; text-align: center; font-weight: bold;
-background-color: #D2B48C;}
+background-color: #D2B48C; padding: 0px 0px 10px; top-border: solid 2px #221811;}
 
-#wrapper {background-color: #FCEBB6; width: 80%; margin-right: auto; margin-left: auto; 
+#wrapper {background-color: #FEF6C2;min-width: 900px; max-width: 1280px;
+ width: 80%; margin-right: auto; margin-left: auto; 
 box-shadow:3px 3px 3px #000000;}
 
 img.cup {vertical-align: text-bottom; }
