@@ -1,0 +1,18 @@
+body{background-color: #FCEBB6; color: #221811; font-family : Verdana, Arial, Geneva;
+ background-image: url("waterfall.jpg"); background-size: cover; }
+
+header{ text-align: center; text-shadow: 3px 3px 5px #00000090;  background-color: #00000020;}
+
+h1{line-height: 200%; background-color : #D2B48C80}
+
+nav{text-align: center; font-weight: bold }
+
+main{margin-left: 10px}
+
+footer{ font-size: 0.60em; font-family: italic, Arial, Geneva; text-align: center; font-weight: bold; }
+
+#wrapper {background-color: #72bb97AF; width: 80%; margin-right: auto; margin-left: auto; }
+
+img.cup {vertical-align: text-bottom; }
+
+
