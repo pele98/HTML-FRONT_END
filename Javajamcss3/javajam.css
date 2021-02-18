@@ -15,7 +15,7 @@ h2{ padding-left: 3em; padding-right: 2em;}
 h3{ padding-left: 3em; padding-right: 2em;}
 
 h4{background-color: #D2B48C; font-size: 1.2em; padding-left: 3em; padding-right: 2em; text-text-transform: uppercase;
-border-bottom: 0px; padding-bottom: 0px;}
+border-bottom: 1px solid#231814 ; padding-bottom: 0px;}
 
 p{padding-left: 3em; padding-right: 2em;}
 
