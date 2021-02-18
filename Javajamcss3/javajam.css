@@ -1,3 +1,5 @@
+* {box-sizing: border-box;}
+
 body{color: #221811; font-family : Verdana, Arial, Geneva;
 background-image: url(images/background.gif);}
 
@@ -6,26 +8,51 @@ header{height: 150px;background-color: #D2B48C;
  background-size: 150px 150px;}
 
 h1{padding: 45px 0px 0px 220px;
-font-size: 3em;}
+font-size: 3em; margin: 0px;}
 
-h4{background-color: #D2B48C; font-size: 1.2em; padding: 0px 10px 5px;}
+h2{ padding-left: 3em; padding-right: 2em;}
 
-nav{text-align: center; font-weight: bold; font-size: 1.5em; padding: 10px;}
+h3{ padding-left: 3em; padding-right: 2em;}
+
+h4{background-color: #D2B48C; font-size: 1.2em; padding-left: 3em; padding-right: 2em; text-text-transform: uppercase;
+border-bottom: 0px; padding-bottom: 0px;}
+
+p{ padding-left: 3em; padding-right: 2em;}
+
+div{ padding-left: 3em; padding-right: 2em;}
+
+ul{ padding-left: 3em; padding-right: 2em;}
+
+dl{ padding-left: 3em; padding-right: 2em;}
+
+nav{text-align: center; font-weight: bold; font-size: 1.5em; padding: 10px;
+float: left; width: 200px}
 nav a {text-decoration: none;}
 
-main{margin-left: 10px; padding: 0em 2em 2em 2em; display: block;}
+nav a:link{color: #FEF6C2;}
+nav a:visited{color: #D2B48C}
+nav a:hover{color: #CC9933}
+
+nav ul{list-style-type: none ; padding-left: 0px;}
+
+main{margin-left: 200px; padding: 0px 0px 0px 0px; display: block; background-color: #FEF6C2}
 
 footer{ font-size: 0.60em; font-family: italic, Arial, Geneva; text-align: center; font-weight: bold;
 background-color: #D2B48C; padding: 0px 0px 10px; border-top: solid 2px #221811;}
 
-#wrapper {background-color: #FEF6C2;min-width: 900px; max-width: 1280px;
+#wrapper {background-color: #231814; min-width: 900px; max-width: 1280px;
  width: 80%; margin-right: auto; margin-left: auto; 
 box-shadow:3px 3px 3px #000000;}
 
-.details {padding: 0% 20% 0% 20%;}
+.details {padding: 0% 20% 0% 20%; overflow: auto;}
+
+.floatleft { float: left; padding-right: 20px; padding-bottom: 20px }
+
 
 img{padding: 0px 10px 0px 10px;}
 
-
+#heroroad { background-image: images/hero.jpg; background-size: 100%; height: 250px;}
+#heromugs { background-image: images/heromugs.jpg; background-size: 100%; height: 250px;}
+#heroquitar{ background-image: images/heroquitar.jpg; background-size: 100%; height: 250px;}
 
 
