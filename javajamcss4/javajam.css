@@ -1,0 +1,59 @@
+*{box-sizing: border-box;}
+
+body{color: #221811; font-family : Verdana, Arial, Geneva;
+background-image: url(images/background.gif);}
+
+header{height: 150px;background-color: #D2B48C;
+ background-image: url(images/coffeelogo.jpg); background-repeat: no-repeat;
+ background-size: 150px 150px;}
+
+h1{padding: 45px 0px 0px 180px;
+font-size: 3em; margin: 0px; }
+
+h2{ padding-left: 3em; padding-right: 2em;}
+
+h3{ padding-left: 3em; padding-right: 2em;}
+
+h4{background-color: #D2B48C; font-size: 1.2em; padding-left: 3em; padding-right: 2em; text-text-transform: uppercase;
+border-bottom: 1px solid#231814 ; padding-bottom: 0px;}
+
+p{padding-left: 3em; padding-right: 2em;}
+
+div{padding-left: 3em; padding-right: 2em;}
+
+ul{padding-left: 3em; padding-right: 2em;}
+
+dl{padding-left: 3em; padding-right: 2em;}
+
+nav{text-align: center; font-weight: bold; font-size: 1.5em; padding: 10px;
+float: left; width: 150px}
+nav a {text-decoration: none;}
+
+nav a:link{color: #FEF6C2;}
+nav a:visited{color: #D2B48C}
+nav a:hover{color: #CC9933}
+
+nav ul{list-style-type: none ; padding-left: 0px; padding-right: 0px}
+
+main{margin-left: 150px; display: block; background-color: #FEF6C2; padding-left:0px; padding-right:0px;
+padding-top: 0px; }
+
+footer{ font-size: 0.60em; font-family: italic, Arial, Geneva; text-align: center; font-weight: bold;
+background-color: #D2B48C; padding: 0px 0px 0px 0px; border-top: solid 2px #221811;}
+
+#wrapper {background-color: #231814; min-width: 900px; max-width: 1280px;
+ width: 80%; margin-right: auto; margin-left: auto; padding-left: 0px; padding-right: 0px;
+box-shadow:3px 3px 3px #000000;}
+
+.details {padding: 0% 20% 0% 20%; overflow: auto;}
+
+.floatleft { float: left; padding-right: 20px; padding-bottom: 20px }
+
+
+img{padding: 0px 10px 0px 10px;}
+
+#heroroad { background-image: url(images/hero.jpg); background-size: 100% 100%; background-repeat: no-repeat ; height: 200px;}
+#heromugs { background-image: url(images/heromugs.jpg); background-size: 100% 100%; background-repeat: no-repeat; height: 200px;}
+#heroguitar{ background-image: url(images/heroguitar.jpg); background-size: 100% 100%; background-repeat: no-repeat; height: 200px;}
+
+
