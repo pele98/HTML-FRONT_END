@@ -43,7 +43,7 @@ background-color: #D2B48C; padding: 0px 0px 0px 0px; border-top: solid 2px #2218
 
 table{ align: center; width: 90%; border-spacing: 0; background-color: #ffffcc; }
 td, th{ padding: 10px; }
-tr:nth-of-type(even) {background-color: #d2b48c; } 
+tr:nth-of-type(odd) {background-color: #d2b48c; } 
 
 #wrapper {background-color: #231814; min-width: 900px; max-width: 1280px;
  width: 80%; margin-right: auto; margin-left: auto; padding-left: 0px; padding-right: 0px;
