@@ -45,6 +45,24 @@ table{ margin:auto; width: 90%; border-spacing: 0; background-color: #ffffcc; }
 td, th{ padding: 10px; }
 tr:nth-of-type(odd) {background-color: #d2b48c; } 
 
+form {
+	padding: 2em;
+}
+label {
+	display: block;
+	float: left;
+	text-align: right;
+	width: 8em;
+	padding-right: 1em;
+}
+input {
+	display: block;
+	margin-bottom: 1em;
+}
+#mySubmit {
+	margin-left: 9.5em;
+}
+
 #wrapper {background-color: #231814; min-width: 900px; max-width: 1280px;
  width: 80%; margin-right: auto; margin-left: auto; padding-left: 0px; padding-right: 0px;
 box-shadow:3px 3px 3px #000000;}
