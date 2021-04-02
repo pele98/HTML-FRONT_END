@@ -1,75 +1,95 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>JavaJam Coffee House</title>
 
-<head>
-<title> JavaJam Coffee House </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
 
-<meta charset="utf-8">
-<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="javajam.css" />
 
-<link rel="stylesheet" href="javajam.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
 
-</head>
+  <body>
+    <div id="wrapper">
+      <header><h1>JavaJam Coffee House</h1></header>
 
-<body>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+        </ul>
+      </nav>
 
-<div id= "wrapper">
+      <main>
+        <div id="heroguitar"></div>
 
-<header> <h1> JavaJam Coffee House </h1> </header>
+        <h2>Music at JavaJam</h2>
 
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="menu.html">Menu</a></li>
-<li><a href="music.html">Music</a></li>
-<li><a href="jobs.html">Jobs</a></li>
-</ul>
-</nav>
+        <p>
+          The first Friday night each month at JavaJam is a special night. Join
+          us from 8 pm to 11 pm for some
+          <a href="#" id="advertisement">
+            music you won't want to miss!
+          </a>
+        </p>
 
-<main> 
+        <h4>January</h4>
 
-<div id="heroguitar"></div>
+        <div class="details">
+          <p>
+            <a href="images/melanie.jpg">
+              <img
+                class="floatleft"
+                src="images/melaniethumb.jpg"
+                alt="Melanie"
+                height="80"
+                width="80"
+            /></a>
 
-<h2> Music at JavaJam </h2>
+            Melanie Morris entertains with her melodic folk style.
+          </p>
+        </div>
 
-<p> The first Friday night each month at JavaJam is a special night. Join us from 8 pm to 11 pm for some
-music you won't want to miss! </p>
+        <h4>February</h4>
 
-<h4> January </h4>
+        <div class="details">
+          <p>
+            <a href="images/greg.jpg">
+              <img
+                class="floatleft"
+                src="images/gregthumb.jpg"
+                alt="Melanie"
+                height="80"
+                width="80"
+            /></a>
 
-<div class="details">
+            Tahoe Greg is back from his tour. New songs. New stories.
+          </p>
+        </div>
+      </main>
 
-<p> 
+      <footer>
+        Copyright &#169; 2016 Javajam Coffee House <br />
+        <a href="mailto:pekka.jarkko@gmail.com"> pekka.jarkko@gmail.com </a>
+      </footer>
+    </div>
 
-<a href="images/melanie.jpg"> <img class="floatleft" src="images/melaniethumb.jpg" alt="Melanie" height="80" width="80"></a>
-
-Melanie Morris entertains with her melodic folk style. </p>
-
-</div>
-
-<h4> February </h4>
-
-<div class="details">
-
-<p>
-
-<a href="images/greg.jpg"> <img class="floatleft" src="images/gregthumb.jpg" alt="Melanie" height="80" width="80"></a>
-
-Tahoe Greg is back from his tour. New songs. New stories. </p>
-
-</div>
-
-</main>
-
-
-<footer>
-
-Copyright &#169; 2016 Javajam Coffee House <br>
-<a href="mailto:pekka.jarkko@gmail.com"> pekka.jarkko@gmail.com </a>
-
-</footer>
-
-</div>
-</body>
-
+    <script>
+      /* If statement added to make hover alert appear only once. */
+      $(document).ready(function () {
+        $("#advertisement").hover(function () {
+          if (document.getElementById("advertisement") != null) {
+            alert("Conserts sell out quickly so act fast!");
+            document.getElementById("advertisement").id = "used";
+          } else {
+            null;
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
