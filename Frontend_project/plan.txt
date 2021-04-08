@@ -1,0 +1,37 @@
+Projects idea is to make "fake" bands website. The site would have the following pages:
+
+Home
+  Short introduction about the band
+  Newest album
+  Next tour
+
+Merch
+  Shirts
+  Jewelry
+  Caps
+  Misc
+
+Tours
+  List of tours
+  Tickets
+  Interactive map
+
+Music
+  Albums
+    Information about the album
+    Small bits of music?
+
+About
+  Introduction about the band
+  History
+  Contact information (forms?)
+
+Blog
+  Comment areas with forms?
+
+
+Merch and Music site would include images.
+Albums would include music elements.
+Tours page with google maps element.
+Contact information would include validation
+Website would also have mobile and tablet view.

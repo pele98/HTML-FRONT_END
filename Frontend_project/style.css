@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+#starman {
+  background-image: url(images/albums/starman.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+}
+#leonardo {
+  background-image: url(images/albums/leonardo.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+}
+#lion {
+  background-image: url(images/albums/lion.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+}
+#alone {
+  background-image: url(images/albums/alone.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+}
+body {
+  background-color: rgb(0, 0, 56);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+th,
+nav,
+nav a,
+ol {
+  color: white;
+}
+/*HEADER*/
+header {
+  margin-top: 0;
+  padding-top: 0;
+  background-color: black;
+  background-image: url("images/logo.png");
+  background-repeat: no-repeat;
+  height: 180px;
+}
+header h1 {
+  padding-left: 185px;
+  font-size: 90px;
+  padding-top: 80px;
+}
+/* NAVIGATION*/
+nav {
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+nav a {
+  padding: 6px 35% 6px 35%;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 0;
+}
+nav li {
+  text-align: center;
+  width: 16.3%;
+  min-width: 150px;
+  display: inline-block;
+  border: 2px solid white;
+  margin-top: 3px;
+}
+nav ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  list-style-type: none;
+  background-color: black;
+}
+nav li:nth-of-type(odd) {
+  background-image: linear-gradient(blue, black);
+}
+nav li:nth-of-type(even) {
+  background-image: linear-gradient(black, blue);
+}
+nav li:nth-of-type(odd):hover {
+  background-image: linear-gradient(blue, white);
+}
+nav li:nth-of-type(even):hover {
+  background-image: linear-gradient(white, blue);
+}
+nav a:hover {
+  font-weight: bold;
+}
+
+th {
+  vertical-align: top;
+  padding: 5px;
+}
+
+td {
+  align-content: left;
+}
+
+footer {
+  padding-top: 15px;
+}
+
+.home_info {
+  background-color: rgba(51, 51, 197, 0.377);
+  border: 2px solid black;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5px;
+  max-width: 1000px;
+  display: inline-block;
+}
+.home_info_h2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 2px solid white;
+}
+.home_info_p {
+  margin-left: 250px;
+  margin-right: 20px;
+}
+.home_info_starman {
+  height: 200px;
+  width: 200px;
+  padding: 10px 10px 10px 10px;
+}
+
+.sub_site {
+  float: left;
+  display: inline-block;
+  margin-right: 40px;
+}
