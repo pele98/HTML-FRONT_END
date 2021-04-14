@@ -30,26 +30,52 @@
 
     <main>
       <div>
+        <audio controls src="../songs/moonmen.mp3" id="song"></audio>
+
         <img
           src="../images/albums/starman.png"
           alt="Starman"
           width="400px"
           height="400px"
+          id="thumbnail"
         />
 
-        <ol class="sub_site">
-          <li>
-            Song one
-            <audio controls src="../songs/moonmen.mp3">
-              Your browser does not support the
-              <code>audio</code> element.
-            </audio>
-          </li>
-          <li>Song two</li>
-          <li>Song three</li>
-          <li>Song four</li>
-          <li>Song five</li>
-        </ol>
+        <div class="container">
+          <div class="box"></div>
+          
+          <img
+          src="../images/albums/starman.png"
+          alt="Starman"
+          width="400px"
+          height="400px"
+          id="thumbnail" />
+        
+          <img
+          src="./assets/icons/play.png"
+          onclick="playPause()"
+          id="play-pause"
+        />
+
+        <img
+          src="./assets/icons/forward.png"
+          onclick="nextSong()"
+          id="next-song"
+        />
+
+        <img
+          src="./assets/icons/backward.png"
+          onclick="previousSong()"
+          id="previous-song"
+        />
+
+        <input
+          type="range"
+          id="progress-bar"
+          min="0"
+          max=""
+          value="0"
+          onchange="changeProgressBar()"
+        />
       </div>
     </main>
 
