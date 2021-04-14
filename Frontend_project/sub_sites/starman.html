@@ -30,14 +30,14 @@
 
     <main>
       <div>
-        <audio controls src="../songs/moonmen.mp3" id="song"></audio>
+        <audio src="../songs/moonmen.mp3" id="song"></audio>
 
         <img
           src="../images/albums/starman.png"
           alt="Starman"
           width="400px"
           height="400px"
-          id="thumbnail"
+          id="background"
         />
 
         <div class="container">
@@ -51,22 +51,24 @@
           id="thumbnail" />
         
           <img
-          src="./assets/icons/play.png"
+          src="../images/play.png"
           onclick="playPause()"
           id="play-pause"
         />
 
         <img
-          src="./assets/icons/forward.png"
+          src="../images/next.png"
           onclick="nextSong()"
           id="next-song"
         />
 
         <img
-          src="./assets/icons/backward.png"
+          src="../images/back.png"
           onclick="previousSong()"
           id="previous-song"
         />
+
+        <div class="song-title">MOONMEN</div>
 
         <input
           type="range"
@@ -76,7 +78,11 @@
           value="0"
           onchange="changeProgressBar()"
         />
+
+        <div class="currentTime"></div>
+        <div class="durationTime"></div>
       </div>
+
     </main>
 
     <footer>
@@ -84,5 +90,7 @@
       <a href="mailto:fake.band@gmail.com"> fake.band@gmail.com </a> <br />
       &nbsp;
     </footer>
+
+    <script src="../player.js"></script>
   </body>
 </html>
