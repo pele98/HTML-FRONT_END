@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Fake band website</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+
+    <link rel="stylesheet" href="../style.css" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <header></header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../music.html">Music</a></li>
+        <li><a href="../tours.html">Tours</a></li>
+        <li><a href="../merch.html">Merch</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <main class="value" value = "1" style="height:600px">
+      <div>
+        <audio src="../sounds/harmony.mp3" id="song"></audio>
+
+        <img
+          src="../images/albums/leonardo.png"
+          alt="Leonardo"
+          width="400px"
+          height="400px"
+          id="background"
+        />
+
+        <div class="container">
+          <div class="box"></div>
+          
+          <img
+          src="../images/albums/leonardo.png"
+          alt="Starman"
+          width="400px"
+          height="400px"
+          id="thumbnail" />
+        
+          <img
+          src="../images/play.png"
+          onclick="playPause()"
+          id="play-pause"
+        />
+
+        <img
+          src="../images/next.png"
+          onclick="nextSong()"
+          id="next-song"
+        />
+
+        <img
+          src="../images/back.png"
+          onclick="previousSong()"
+          id="previous-song"
+        />
+
+        <div class="song-title">Harmony</div>
+
+        <input
+          type="range"
+          id="progress-bar"
+          min="0"
+          max=""
+          value="0"
+          onchange="changeProgressBar()"
+        />
+
+        <div class="currentTime"></div>
+        <div class="durationTime"></div>
+      </div>
+
+    </main>
+
+    <footer>
+      Copyright &#169; 2021 Fake band website <br />
+      <a href="mailto:fake.band@gmail.com"> fake.band@gmail.com </a> <br />
+      &nbsp;
+    </footer>
+
+    <script src="../sub_sites/player.js"></script>
+    
+  </body>
+</html>

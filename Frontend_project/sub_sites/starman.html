@@ -14,7 +14,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body >
     <header></header>
 
     <nav>
@@ -28,35 +28,69 @@
       </ul>
     </nav>
 
-    <main>
+    <main class="value" value = "0" style="height: 500px;">
       <div>
+        <audio src="../sounds/dreamer.mp3" id="song"></audio>
+
         <img
           src="../images/albums/starman.png"
           alt="Starman"
           width="400px"
           height="400px"
+          id="background"
         />
 
-        <ol class="sub_site">
-          <li>
-            Song one
-            <audio controls src="../songs/moonmen.mp3">
-              Your browser does not support the
-              <code>audio</code> element.
-            </audio>
-          </li>
-          <li>Song two</li>
-          <li>Song three</li>
-          <li>Song four</li>
-          <li>Song five</li>
-        </ol>
+        <div class="container">
+          <div class="box"></div>
+          
+          <img
+          src="../images/albums/starman.png"
+          alt="Starman"
+          width="400px"
+          height="400px"
+          id="thumbnail" />
+        
+          <img
+          src="../images/play.png"
+          onclick="playPause()"
+          id="play-pause"
+        />
+
+        <img
+          src="../images/next.png"
+          onclick="nextSong()"
+          id="next-song"
+        />
+
+        <img
+          src="../images/back.png"
+          onclick="previousSong()"
+          id="previous-song"
+        />
+
+        <div class="song-title">Dreamer</div>
+
+        <input
+          type="range"
+          id="progress-bar"
+          min="0"
+          max=""
+          value="0"
+          onchange="changeProgressBar()"
+        />
+
+        <div class="currentTime"></div>
+        <div class="durationTime"></div>
       </div>
-    </main>
+
+  </main>
 
     <footer>
       Copyright &#169; 2021 Fake band website <br />
       <a href="mailto:fake.band@gmail.com"> fake.band@gmail.com </a> <br />
       &nbsp;
     </footer>
+
+    <script src="../sub_sites/player.js"></script>
   </body>
 </html>

@@ -22,7 +22,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="music.html">Music</a></li>
+        <li class="nav_current"><a href="music.html">Music</a></li>
         <li><a href="tours.html">Tours</a></li>
         <li><a href="merch.html">Merch</a></li>
         <li><a href="blog.html">Blog</a></li>
@@ -31,24 +31,47 @@
     </nav>
 
     <main>
-      <table>
-        <tr>
-          <th id="starman"><a href="sub_sites/starman.html"> Starman </a></th>
-          <td></td>
+      <div class="album_container">
+        <a href="sub_sites/starman.html"
+          ><div class="img_hover_zoom">
+            <img
+              src="images/albums/starman.png"
+              alt="Starman"
+              height="300"
+              width="300"
+            /></div
+        ></a>
 
-          <th id="leonardo">
-            <a href="sub_sites/leonardo.html"> Leonardo </a>
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th id="lion"><a href="sub_sites/lion.html"> Lion </a></th>
-          <td></td>
+        <a href="sub_sites/leonardo.html"
+          ><div class="img_hover_zoom">
+            <img
+              src="images/albums/leonardo.png"
+              alt="Leonardo"
+              height="300"
+              width="300"
+            /></div
+        ></a>
 
-          <th id="alone"><a href="sub_sites/alone.html"> Alone </a></th>
-          <td></td>
-        </tr>
-      </table>
+        <a href="sub_sites/lion.html"
+          ><div class="img_hover_zoom">
+            <img
+              src="images/albums/lion.png"
+              alt="Lion"
+              height="300"
+              width="300"
+            /></div
+        ></a>
+
+        <a href="sub_sites/alone.html"
+          ><div class="img_hover_zoom">
+            <img
+              src="images/albums/alone.png"
+              alt="Alone"
+              height="300"
+              width="300"
+            /></div
+        ></a>
+      </div>
     </main>
 
     <footer>
@@ -56,5 +79,6 @@
       <a href="mailto:fake.band@gmail.com"> fake.band@gmail.com </a> <br />
       &nbsp;
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
