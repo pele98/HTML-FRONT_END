@@ -7,7 +7,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_elements.css" />
+    <link rel="stylesheet" href="style_class.css" />
+    <link rel="stylesheet" href="style_id.css" />
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,13 +32,36 @@
       </ul>
     </nav>
 
-    <main></main>
+    <main>
 
-    <footer>
+        <div class="tours">
+          <h2 style="text-align: center"> 2021 tours <h2>
+            <ul>
+              <li>12.5 <a href="#" onclick="finland()">Finland</a></li>
+              <li>30.5 <a href="#" onclick="estonia()">Estonia</a></li>
+              <li>10.6 <a href="#" onclick="belarus()">Belarus</a></li>
+              <li>25.6 <a href="#" onclick="germany()">Germany</a></li>
+              <li>10.7 <a href="#" onclick="austria()">Austria</a></li>
+              <li>26.7 <a href="#" onclick="spain()">Spain</a></li>
+            </ul>    
+        </div>
+
+        <div class="tours_info">
+        <p> Select tour location for more information. </p>
+        </div>
+
+        <iframe id="mapcanvas"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.1147634422473!2d24.929804831474424!3d60.20594606394087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692086097fe9a83%3A0xd0e701000e97142e!2sHartwall%20Arena!5e0!3m2!1sen!2sfi!4v1618562939576!5m2!1sen!2sfi">
+        </iframe>
+
+    </main>
+
+    <footer id="copyright">
       Copyright &#169; 2021 Fake band website <br />
       <a href="mailto:fake.band@gmail.com"> fake.band@gmail.com </a> <br />
       &nbsp;
     </footer>
     <script src="main.js"></script>
+    <script src="map.js"></script>
   </body>
 </html>

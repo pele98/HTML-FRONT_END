@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+.img_hover_zoom {
+  height: 300;
+  overflow: hidden;
+}
+
+.img_hover_zoom img {
+  -webkit-transition: 0.5s ease-in-out;
+}
+
+.img_hover_zoom:hover img {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/*HOMEPAGE*/
+.home_info {
+  background-color: rgba(21, 21, 116, 0.596);
+  border: 2px solid black;
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-bottom: 5px;
+  display: inline-block;
+  height: 250px;
+  width: 99.1%;
+}
+.home_info:nth-of-type(1) {
+  width: 49%;
+}
+.home_info:nth-of-type(2) {
+  position: absolute;
+  width: 49%;
+  background-image: url("images/albums/starman.png");
+  background-size: 140px 140px;
+  background-repeat: no-repeat;
+  background-position-y: 55%;
+  background-position-x: 10px;
+}
+.home_info:nth-of-type(3) {
+  height: 650px;
+}
+.home_info_h2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 2px solid white;
+}
+.home_info_p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.about_div {
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position-x: 5px;
+  background-position-y: 22px;
+  height: 120px;
+}
+.about_div:nth-of-type(even) {
+  background-position-x: 97%;
+}
+.sub_site {
+  float: left;
+  display: inline-block;
+  margin-right: 40px;
+}
+/* container for music player */
+.container {
+  position: absolute;
+  height: 300pt;
+  width: 250pt;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000000;
+}
+
+.album_container {
+  position: absolute;
+  height: 300px;
+  width: 1200px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000000;
+  z-index: -1;
+}
+
+/* container for play, pause, previous track, next track, and progress bar  */
+.box {
+  position: absolute;
+  height: 50%;
+  width: 103%;
+  background: -webkit-linear-gradient(45deg, rgb(29, 29, 29), rgb(1, 0, 50));
+  z-index: 4;
+  bottom: -17%;
+}
+/* track artist */
+.song-artist {
+  position: absolute;
+  z-index: 4;
+  color: rgb(21, 21, 116);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  bottom: 21%;
+  left: 28%;
+}
+
+/* track title */
+.song-title {
+  position: absolute;
+  z-index: 4;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  bottom: 16%;
+  left: 28%;
+}
+
+/* style for current time of the track */
+.currentTime {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  bottom: -1%;
+  left: 17%;
+  z-index: 4;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: white;
+  align-items: center;
+}
+
+/* style for the total length of the track */
+.durationTime {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  bottom: -1%;
+  right: 11%;
+  z-index: 4;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  align-items: center;
+  color: rgb(21, 21, 116);
+}
+
+.tours {
+  background-color: rgba(21, 21, 116, 0.596);
+  border: 3px solid black;
+  padding: 10px;
+  display: inline-block;
+  height: auto;
+  width: 300px;
+  position: absolute;
+  max-width: 50%;
+}
+
+.tours_info {
+  background-color: rgba(21, 21, 116, 0.596);
+  border: 3px solid black;
+  padding: 10px;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  max-width: 50%;
+  margin-block-start: 300px;
+}
+.tours_info b {
+  font-size: 1.3em;
+  padding-right: 0.5em;
+}
+.tours a {
+  text-decoration-line: none;
+}
+
+.tours a:visited {
+  color: rgb(0, 0, 202);
+}
+.tours a:hover {
+  color: rgb(185, 185, 255);
+  text-decoration-line: underline;
+}

@@ -7,7 +7,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_elements.css" />
+    <link rel="stylesheet" href="style_class.css" />
+    <link rel="stylesheet" href="style_id.css" />
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,37 +35,44 @@
     </nav>
 
     <main value="home">
-      <div class="home_info">
-        <h2 class="home_info_h2">Who we are</h2>
-        <p class="home_info_p">
-          Fake band - founded in early 2015, is a fake band for a website
-          project. We are a group of friends, interested in music and we do
-          varieties of different music, our own as well as covers.<br />
-          We have recently released our 4th album STARMAN and are currently
-          touring around the world.
-        </p>
-      </div>
+      <div id="home_page">
+        <div class="home_info" title="short introduction">
+          <h2 class="home_info_h2">Who we are</h2>
+          <p class="home_info_p">
+            Fake band - founded in early 2015, is a fake band for a website
+            project. We are a group of friends, interested in music and we do
+            varieties of different music, our own as well as covers.<br />
+            We have recently released our 4th album STARMAN and are currently
+            touring around the world.
+          </p>
+        </div>
 
-      <div class="home_info">
-        <h2 class="home_info_h2">Our new album "STARMAN" now available!</h2>
-        <p class="home_info_p" style="padding-left: 150px;">
-          STARMAN - released in the beginning of 2021, is a one of the most
-          selling albums of 2020's and includes covers and new hits such as
-          Dreamer and Fade to black.
-        </p>
-      </div>
+        <div class="home_info" title="new album">
+          <h2 class="home_info_h2">Our new album "STARMAN" now available!</h2>
+          <p class="home_info_p" style="padding-left: 150px;">
+            STARMAN - released in the beginning of 2021, is a one of the most
+            selling albums of 2020's and includes covers and new hits such as
+            Dreamer and Fade to black.
+          </p>
+        </div>
 
-      <div class="home_info">
-        <h2 class="home_info_h2">Next tour!</h2>
-        <p class="home_info_p">
-          Our big European tour will beging in the beginning of May this year
-          (2021). We will play songs from our new album as well as hits from the
-          past. More information of our <a href="tours.html">tour page.</a>
-        </p>
+        <div class="home_info" title="next tour">
+          <h2 class="home_info_h2">Next tour!</h2>
+          <p class="home_info_p">
+            Our big European tour will beging in the beginning of May this year
+            (2021). We will play songs from our new album as well as hits from
+            the past. More information of our
+            <a href="tours.html">tour page.</a>
+          </p>
+          <img
+            src="images/tours/tourimage2.png"
+            alt="Image from 2017 tour on France"
+          />
+        </div>
       </div>
     </main>
 
-    <footer>
+    <footer id="copyright">
       Copyright &#169; 2021 Fake band website <br />
       <a href="mailto:fake.band@gmail.com"> fake.band@gmail.com </a> <br />
       &nbsp;

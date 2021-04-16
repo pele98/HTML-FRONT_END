@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+th,
+nav,
+nav a,
+ol {
+  color: white;
+}
+h4 {
+  margin-left: 5px;
+}
+p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*HEADER*/
+header {
+  margin-top: 0;
+  padding-top: 0;
+  background-color: rgba(0, 0, 0, 0.514);
+  background-image: url("images/logo.png");
+  background-repeat: no-repeat;
+  height: 180px;
+}
+header h1 {
+  padding-left: 185px;
+  font-size: 90px;
+  padding-top: 80px;
+}
+/* NAVIGATION*/
+nav {
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+}
+nav a {
+  padding: 6px 35% 6px 35%;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 0;
+}
+nav li {
+  text-align: center;
+  width: 16.3%;
+  min-width: 150px;
+  display: inline-block;
+  border: 2px solid white;
+  margin-top: 3px;
+}
+nav ul {
+  padding-left: 0;
+  padding-right: 0;
+  list-style-type: none;
+  background-color: black;
+}
+nav li:nth-of-type(odd) {
+  background-image: linear-gradient(blue, black);
+}
+nav li:nth-of-type(even) {
+  background-image: linear-gradient(black, blue);
+}
+nav li:nth-of-type(odd):hover {
+  background-image: linear-gradient(blue, white);
+}
+nav li:nth-of-type(even):hover {
+  background-image: linear-gradient(white, blue);
+}
+nav a:hover {
+  font-weight: bold;
+}
+
+th {
+  vertical-align: top;
+  padding: 5px;
+}
+
+td {
+  align-content: left;
+}
+
+ul {
+  list-style: none;
+}
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  clear: both;
+  z-index: 0;
+}
+
+table {
+  background-color: rgba(21, 21, 116, 0.596);
+  border: 2px solid black;
+  border-spacing: 4px;
+}
+td {
+  padding: 0px 5px 0px 5px;
+  border: 1px solid white;
+  text-align: right;
+}
+td:nth-of-type(even) {
+  text-align: left;
+}
+tr {
+  padding: 0 0 0 0;
+}
+tr:nth-of-type(even) {
+  background-color: rgba(27, 27, 155, 0.527);
+}
+
+body {
+  background: #000000;
+  background-image: url("images/main_background.png");
+  background-repeat: repeat;
+}
+
+iframe {
+  position: absolute;
+  right: 10px;
+  width: 50%;
+  height: 65%;
+}
