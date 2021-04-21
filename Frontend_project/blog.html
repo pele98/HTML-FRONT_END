@@ -32,7 +32,45 @@
       </ul>
     </nav>
 
-    <main></main>
+    <main>
+      <div id="log_in_option" onclick="showLogIn()"></div>
+      <div id="blog_form">
+        <form>
+          <label for="fname">First Name:</label><br>
+          <input type="text" id="fname" name="fname"></input><br>
+          <label for="lname">Last Name:</label><br>
+          <input type="text" id="lname" name="lname"></input><br>
+          <label for="title">Title:</label><br>
+          <input type="text" id="title" name="title"></input><br>
+          <label for="content">Blog Content:</label><br>
+          <textarea id="content" rows=20 cols=129></textarea><br>
+          <button type="button" id="create_blog_button" onclick="createBlog()">Create Blog</button>
+        </form>
+      </div>
+      <div id="log_in">
+        <form>
+          <label for= "username">Username:</label><br>
+          <input type="text" id="username" name="username"></input><br>
+          <label for= "password">Password:</label><br>
+          <input type="password" id="password" name="password"></input><br>
+          <button type="button" id="log_in_button" onclick="logIn()">Log In</button>
+        </form>
+      </div>
+      <div id="blogs">
+        <div class="blog">
+          <h2>Blog 1 title</h2>
+          <p>asdaseqweasdasdasdqweqweasdasdqweqweasdasdqqweqweasdasd<br>
+          asdfswoeirwoeijdsdpfijwpeijpfasdf sapdfjwpe  pdjfwef pjw <br>
+        sdlfjwe oweirwoe  alskd erp dföasdfkj werpwo er</p>
+        </div>
+        <div class="blog">
+            <h2>Blog 2 title</h2>
+            <p>asdaseqweasdasdasdqweqweasdasdqweqweasdasdqqweqweasdasd<br>
+            asdfswoeirwoeijdsdpfijwpeijpfasdf sapdfjwpe  pdjfwef pjw <br>
+          sdlfjwe oweirwoe  alskd erp dföasdfkj werpwo er</p>
+          </div>
+      </div>
+    </main>
 
     <footer>
       Copyright &#169; 2021 Fake band website <br />
@@ -40,5 +78,6 @@
       &nbsp;
     </footer>
     <script src="main.js"></script>
+    <script src="blog.js"></script>
   </body>
 </html>

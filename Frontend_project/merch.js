@@ -5,6 +5,9 @@ var merchArray = [];
 // keeps track of how many merches are being purchased
 var merchCounter = 1;
 
+// keeps track of mouse position
+var mousePosition = null;
+
 // class for merch types
 class MerchType {
   constructor(name, thumbnail) {
@@ -33,24 +36,32 @@ function writeMerchType(merchType) {
     merchType.name +
     "\")' style= 'background-image: url(\"" +
     merchType.thumbnail +
-    "\"');></div>";
+    "\"'); alt= '" +
+    merchType.name +
+    "'></div>";
+
+  // write the merch type and its background to merch selector div
   document.getElementById("merch_selector").innerHTML += toWrite;
 }
 
 // write merch into the document based on the selected type
 function writeMerch(merchName) {
+  // remove any previous merch from merch area
   document.getElementById("merch_area").innerHTML = "";
-  console.log(merchArray.length);
+
+  // loop through the mercharray and add all matching merches to
+  // the merch area
   var i;
   for (i = 0; i < merchArray.length; i++) {
-    console.log(merchArray[i].type.name);
     if (merchArray[i].type.name === merchName) {
       var toWrite =
         "<div class= 'merch' onclick= 'previewMerch(\"" +
         merchArray[i].name +
         "\")' style= 'background-image: url(\"" +
         merchArray[i].thumbnail +
-        "\")'></div>";
+        "\")' alt= '" +
+        merchArray[i].name +
+        "'></div>";
       document.getElementById("merch_area").innerHTML += toWrite;
     }
   }
@@ -58,7 +69,10 @@ function writeMerch(merchName) {
 
 // loads merch into the preview area
 function previewMerch(merchName) {
+  // reset the merch amount counter
   merchCounter = 1;
+
+  // loop through merch array and find the merch with mathcing name
   var merch;
   var i;
   for (i = 0; i < merchArray.length; i++) {
@@ -66,8 +80,12 @@ function previewMerch(merchName) {
       merch = merchArray[i];
     }
   }
+
+  // remove any previous merch from merch preview
   var merchPreview = document.getElementById("merch_preview");
   merchPreview.innerHTML = "";
+
+  // buttons below the merch image
   var previewButtons =
     "<div id='merch_preview_buttons'>\
   <div id='merch_preview_minus'></div>\
@@ -75,11 +93,18 @@ function previewMerch(merchName) {
   <div id='merch_preview_amount'></div>\
   <div id='merch_preview_buy'></div>\
   </div>";
+
+  // writes the merch preview box and the buttons to it
   merchPreview.innerHTML =
-    "<div id='merch_preview_box'>" + previewButtons + "</div>";
+    "<div id='merch_preview_box' onclick= 'movePreview()'>" +
+    previewButtons +
+    "</div>";
+
+  // set the merch preview box background to be the merches image
   document.getElementById("merch_preview_box").style.backgroundImage =
     "url(" + merch.thumbnail + ")";
 
+  // write the table containing merch and purchase info
   var merchInfo =
     "<div id= 'merch_preview_info'>\
   <table><tr><th>Amount in stock</th><td>" +
@@ -91,7 +116,11 @@ function previewMerch(merchName) {
     merch.price * merchCounter +
     "</td></tr></table>\
   </div>";
+
+  // add this table to the merch preview
   merchPreview.innerHTML += merchInfo;
+
+  // add function to their matching buttons
   document.getElementById("merch_preview_minus").onclick = function () {
     minus_merch(merch);
   };
@@ -103,44 +132,108 @@ function previewMerch(merchName) {
     buy_merch(merch);
   };
 }
+
 // update purchase price
 function updatePurchasePrice(merch) {
   document
     .getElementById("merch_preview_info")
     .getElementsByTagName("td")[2].innerHTML = merch.price * merchCounter;
 }
+
 // add one to merch counter
 function plus_merch(merch) {
+  // if merchcounter tries to go over the stock amount, dont increase it
+  // further
   if (merchCounter >= merch.amountIntStock) {
     return;
   }
+
+  // otherwise add 1 to merch counter and update the merchcount to the
+  // merch preview amount div
   merchCounter += 1;
   document.getElementById("merch_preview_amount").innerHTML = merchCounter;
+
+  // update the purchase price
   updatePurchasePrice(merch);
 }
+
 // minus one from merch counter
 function minus_merch(merch) {
+  // if the merchcounter tries to go to 0 or lower, dont change it
   if (merchCounter <= 1) {
     return;
   }
+
+  // otherwise reduce it by one and update merch preview amount and
+  // purchase price
   merchCounter -= 1;
   document.getElementById("merch_preview_amount").innerHTML = merchCounter;
   updatePurchasePrice(merch);
 }
+
 // buy merch
 function buy_merch(merch) {
-  if (merchCounter > merch.amountIntStock) {
+  // dont allow purchases that are higher than the amount in stock
+  if (merchCounter > merch.amountInStock) {
     return;
   }
+
+  // reduce the amount from stock based on merchcounter
   merch.amountIntStock -= merchCounter;
+
+  // update new stock amount to the table on prview info
   document
     .getElementById("merch_preview_info")
     .getElementsByTagName("td")[0].innerHTML = merch.amountIntStock;
+
+  // if merch counter is higher than the current stock amount,
+  // change it to be the current stock amount
   if (merchCounter > merch.amountIntStock) {
     merchCounter = merch.amountIntStock;
+
+    // update merch preview and purchase price
     document.getElementById("merch_preview_amount").innerHTML = merchCounter;
     updatePurchasePrice(merch);
   }
+}
+
+// moves the preview on every other click based on mouse movement
+function movePreview() {
+  // if mouse position is null, get the current position
+  if (mousePosition == null) {
+    mousePosition = [window.event.clientX, window.event.clientY];
+    return;
+  }
+
+  // calculates the horizontal and vertical moves between the last 2 clicks
+  var horMove = window.event.clientX - mousePosition[0];
+  var verMove = window.event.clientY - mousePosition[1];
+
+  // get the vertical and horizontal background positions of the
+  // preview image
+  var verPos = parseInt(
+    document.getElementById("merch_preview_box").style.backgroundPositionY
+  );
+  var horPos = parseInt(
+    document.getElementById("merch_preview_box").style.backgroundPositionX
+  );
+
+  // if they are intereger, set the new background positions to be
+  // the previous ones + mouse movement
+  if (!(isNaN(horPos) || isNaN(verPos))) {
+    var string =
+      String(horMove + horPos) + "px " + String(verMove + verPos) + "px";
+  }
+  // else set them equal to only the mouse movement
+  else {
+    var string = String(horMove) + "px " + String(verMove) + "px";
+  }
+  document.getElementById(
+    "merch_preview_box"
+  ).style.backgroundPosition = string;
+
+  // set mouseposition to null to allow picking a new position
+  mousePosition = null;
 }
 
 // create merch types

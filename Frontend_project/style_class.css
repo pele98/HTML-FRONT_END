@@ -201,3 +201,80 @@
   color: rgb(185, 185, 255);
   text-decoration-line: underline;
 }
+
+.center_class {
+  display: flex;
+  justify-content: center;
+}
+.blog {
+  background-color: rgba(21, 21, 116, 0.596);
+}
+
+@media only screen and (max-width: 767px) {
+  .home_info {
+    background-color: rgba(21, 21, 116, 0.596);
+    border: 1px solid black;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+  }
+  .home_info:nth-of-type(1) {
+    width: 100%;
+  }
+  .home_info:nth-of-type(2) {
+    position: relative;
+    width: 100%;
+    background-image: url("images/albums/starman.png");
+    background-size: 140px 140px;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-position-x: 10px;
+  }
+  .home_info:nth-of-type(3) {
+    height: auto;
+  }
+
+  .center_class img {
+    width: 95%;
+  }
+
+  .album_container {
+    justify-content: center;
+    display: inline-block;
+    height: 1200px;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .img_hover_zoom img {
+    width: 100%;
+  }
+  .container {
+    margin-top: 250px;
+  }
+  .tours {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+  }
+  .tours_info {
+    max-width: 100%;
+    width: 100%;
+    margin-block-start: 5px;
+  }
+  .about_div {
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position-x: 5px;
+    background-position-y: 22px;
+    height: auto;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+}
