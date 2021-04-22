@@ -191,14 +191,15 @@
   padding-right: 0.5em;
 }
 .tours a {
+  color: rgb(185, 185, 255)
   text-decoration-line: none;
 }
 
 .tours a:visited {
-  color: rgb(0, 0, 202);
+  color: rgb(185, 185, 255);
 }
 .tours a:hover {
-  color: rgb(185, 185, 255);
+  color: rgb(75, 185, 255);
   text-decoration-line: underline;
 }
 
