@@ -277,7 +277,7 @@
   }
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1025px) and (min-width: 768px) {
 	.home_info {
     background-color: rgba(21, 21, 116, 0.596);
     border: 1px solid black;
@@ -311,18 +311,27 @@
   }
   
   .album_container {
-    justify-content: left;
-    display: inline-table;
-    height: 1200px;
-    width: 100%;
-	max-width:300px;
-    margin: auto;
-    margin-top: 10px;
+    display: contents;
+	
+
   }
-  .img_hover_zoom img {
-    width: 100%;
+  
+  .img_hover_zoom {
+	  width: 50%;
+	  display: inline;
   }
   .container {
-    margin-top: 250px;
+    margin-top: 280px;
+  }
+  
+  .tours {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+  }
+  .tours_info {
+    max-width: 100%;
+    width: 100%;
+    margin-block-start: 5px;
   }
 }
