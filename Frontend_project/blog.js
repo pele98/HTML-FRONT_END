@@ -31,6 +31,9 @@ function logIn() {
       document.getElementById("username").value = "";
       document.getElementById("password").value = "";
     }
+	else {
+		document.getElementById("login_response").innerHTML = "Username or password incorrect";
+	}
   }
 }
 function logOut() {
