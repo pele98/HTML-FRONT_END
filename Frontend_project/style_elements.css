@@ -14,7 +14,8 @@ nav,
 nav a,
 label,
 ol 
-span{
+span
+figcaption{
   color: white;
   font-family: Times New Roman, Calibri, Arial;
 }
@@ -134,6 +135,7 @@ body {
   background: #000000;
   background-image: url("images/mainbackground.png");
   background-repeat: repeat;
+  
 }
 iframe {
   position: absolute;
@@ -194,5 +196,40 @@ input[type="password"] {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1025px) {
+	
+	header h1 {
+    font-size: 3em;
+    padding-left: 27%;
+    padding-top: 5px;
+  }
+
+  header {
+    margin: 2px;
+    background-size: 15%;
+    height: 100px;
+  }
+	
+	nav {
+    display: inline-block;
+    float: none;
+    padding-top: 0;
+    margin: 5px;
+    font-size: 1.3em;
+  }
+  nav li {
+    display: inline-block;
+    width: 49%;
+  }
+  nav a {
+    padding: o;
+    width: 49%;
+    height: 49%;
+    font-weight: bold;
+    border-style: none;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
 }
