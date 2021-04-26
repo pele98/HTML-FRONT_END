@@ -243,3 +243,21 @@ input[type="password"] {
     height: 600px;
   }
 }
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(21, 21, 116, 1);
+}
+/* Corner */
+::-webkit-scrollbar-corner{
+	background: rgba(21, 21, 116, 1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1010FF;
+}

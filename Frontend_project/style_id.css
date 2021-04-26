@@ -224,6 +224,37 @@
 }
 
 /*BLOG*/
+#title{
+	width: 408px;
+}
+#fname{
+	width: 408px;
+}
+#lname{
+	width: 408px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(21, 21, 116, 1);
+}
+::-webkit-scrollbar-corner{
+	background: rgba(21, 21, 116, 1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1010FF;
+}
 #log_in_option {
   height: 100px;
   width: 100px;
