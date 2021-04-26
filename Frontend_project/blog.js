@@ -2,12 +2,15 @@ const users = [
   ["Jarkko123", "greatpass"],
   ["Pekka123", "strongpass"]
 ];
+
+document.getElementById("log_in_option").style.backgroundSize = "100%";
+
 function showLogIn() {
   document.getElementById("log_in").style.display = "block";
   document.getElementById("log_in_option").onclick = function () {
     hideLogIn(false);
   };
-  document.getElementById("log_in_option").style.background = "url('images/hide.png')";
+  document.getElementById("log_in_option").style.backgroundImage = "url('images/hide.png')";
 }
 function hideLogIn(loggedIn) {
   document.getElementById("log_in").style.display = "none";
@@ -15,12 +18,12 @@ function hideLogIn(loggedIn) {
     document.getElementById("log_in_option").onclick = function () {
       showLogIn();
     };
-	document.getElementById("log_in_option").style.background = "url('images/show.png')";
+	document.getElementById("log_in_option").style.backgroundImage = "url('images/show.png')";
   } else {
     document.getElementById("log_in_option").onclick = function () {
       logOut();
     };
-	document.getElementById("log_in_option").style.background = "url('images/logout.png')";
+	document.getElementById("log_in_option").style.backgroundImage = "url('images/logout.png')";
   }
 }
 function logIn() {
@@ -44,7 +47,7 @@ function logOut() {
   document.getElementById("log_in_option").onclick = function () {
     showLogIn();
   };
-  document.getElementById("log_in_option").style.background = "url('images/show.png')";
+  document.getElementById("log_in_option").style.backgroundImage = "url('images/show.png')";
 }
 function createBlog() {
   var words = document.getElementById("content").value.split(" ");
