@@ -104,6 +104,10 @@ footer {
   z-index: 0;
 }
 
+footer a {
+color: rgb(185, 185, 255)
+}
+
 table {
   background-color: rgba(21, 21, 116, 0.596);
   border: 2px solid black;
