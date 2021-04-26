@@ -13,8 +13,10 @@ th,
 nav,
 nav a,
 label,
-ol {
+ol 
+span{
   color: white;
+  font-family: Times New Roman, Calibri, Arial;
 }
 h4 {
   margin-left: 5px;
