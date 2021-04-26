@@ -3,11 +3,6 @@ const users = [
   ["Pekka123", "strongpass"]
 ];
 
-document.getElementById("log_in_option").style.backgroundSize = "100%";
-//document.getElementById("blogs").style.display = "inline-block";
-document.getElementsByClassName("blog")[0].style.display = "inline-block";
-document.getElementsByClassName("blog")[1].style.display = "inline-block";
-
 function showLogIn() {
   document.getElementById("log_in").style.display = "block";
   document.getElementById("log_in_option").onclick = function () {
