@@ -227,7 +227,8 @@
 #log_in_option {
   height: 100px;
   width: 100px;
-  background-color: white;
+  background-image: url("images/show.png");
+  background-size: 100%;
   float: right;
 }
 #log_in {
@@ -249,6 +250,7 @@
 }
 #blogs {
   display: inline-block;
+  justify-content: top;
 }
 
 @media only screen and (max-width: 767px) {

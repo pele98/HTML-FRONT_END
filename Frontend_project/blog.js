@@ -42,6 +42,7 @@ function logIn() {
 }
 function logOut() {
   document.getElementById("blog_form").style.display = "none";
+  document.getElementById("login_response").innerHTML = "";
   document.getElementById("log_in_option").onclick = function () {
     showLogIn();
   };
