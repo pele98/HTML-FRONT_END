@@ -88,10 +88,10 @@ function previewMerch(merchName) {
   // buttons below the merch image
   var previewButtons =
     "<div id='merch_preview_buttons'>\
-  <div id='merch_preview_minus'></div>\
-  <div id='merch_preview_plus'></div>\
+  <div id='merch_preview_minus' alt='minus button'></div>\
+  <div id='merch_preview_plus' alt='plus button'></div>\
   <div id='merch_preview_amount'></div>\
-  <div id='merch_preview_buy'></div>\
+  <div id='merch_preview_buy' alt='buy merch button'></div>\
   </div>";
 
   // writes the merch preview box and the buttons to it
