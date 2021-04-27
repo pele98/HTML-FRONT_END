@@ -19,11 +19,11 @@ class MerchType {
 
 // class for merch
 class Merch {
-  constructor(name, type, price, amountIntStock, thumbnail) {
+  constructor(name, type, price, amountInStock, thumbnail) {
     this.name = name;
     this.type = type;
     this.price = price;
-    this.amountIntStock = amountIntStock;
+    this.amountInStock = amountInStock;
     this.thumbnail = thumbnail;
     merchArray.push(this);
   }
@@ -108,7 +108,7 @@ function previewMerch(merchName) {
   var merchInfo =
     "<div id= 'merch_preview_info'>\
   <table><tr><th>Amount in stock</th><td>" +
-    merch.amountIntStock +
+    merch.amountInStock +
     "</td></tr>\
   <tr><th>Price</th><td>" +
     merch.price +
@@ -144,7 +144,7 @@ function updatePurchasePrice(merch) {
 function plus_merch(merch) {
   // if merchcounter tries to go over the stock amount, dont increase it
   // further
-  if (merchCounter >= merch.amountIntStock) {
+  if (merchCounter >= merch.amountInStock) {
     return;
   }
 
@@ -174,22 +174,24 @@ function minus_merch(merch) {
 // buy merch
 function buy_merch(merch) {
   // dont allow purchases that are higher than the amount in stock
+  console.log(merchCounter);
+  console.log(merch.amountInStock);
   if (merchCounter > merch.amountInStock) {
     return;
   }
 
   // reduce the amount from stock based on merchcounter
-  merch.amountIntStock -= merchCounter;
+  merch.amountInStock -= merchCounter;
 
   // update new stock amount to the table on prview info
   document
     .getElementById("merch_preview_info")
-    .getElementsByTagName("td")[0].innerHTML = merch.amountIntStock;
+    .getElementsByTagName("td")[0].innerHTML = merch.amountInStock;
 
   // if merch counter is higher than the current stock amount,
   // change it to be the current stock amount
-  if (merchCounter > merch.amountIntStock) {
-    merchCounter = merch.amountIntStock;
+  if (merchCounter > merch.amountInStock) {
+    merchCounter = merch.amountInStock;
 
     // update merch preview and purchase price
     document.getElementById("merch_preview_amount").innerHTML = merchCounter;
