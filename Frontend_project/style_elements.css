@@ -137,6 +137,9 @@ body {
   background-repeat: repeat;
   
 }
+main {
+	min-height:70vh;
+}
 iframe {
   position: absolute;
   right: 10px;
