@@ -121,9 +121,15 @@
   outline: none;
 }
 
+#album_wrapper{
+}
+
 #copyright {
-  position: relative;
+  position: absolute;
   bottom: 0;
+  width: 100%;
+  height: 50px;
+  
 }
 
 #copyright_musicplayer {
@@ -426,6 +432,15 @@
   #copyright_musicplayer {
     margin: 0;
     z-index: -1;
+  }
+  
+  #album_wrapper{
+	  position: absolute;
+	  width: 620px;
+	  height: 620px;
+	  top: 60%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
   }
 
   #merch_selector {
