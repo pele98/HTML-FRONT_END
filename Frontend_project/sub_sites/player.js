@@ -8,6 +8,7 @@ const songTitle = document.querySelector(".song-title"); // element where track 
 const progressBar = document.querySelector("#progress-bar"); // element where progress bar appears
 let pPause = document.querySelector("#play-pause"); // element where play and pause image appears
 
+// Songs that album have
 var starman_songs = [
   "../sounds/dreamer.mp3",
   "../sounds/fade_to_black.mp3",
@@ -15,6 +16,7 @@ var starman_songs = [
   "../sounds/without_you.mp3"
 ];
 
+// Titles for each song.
 var starman_titles = ["Dreamer", "Fade to Black", "Wool sock", "Without you"];
 
 var leonardo_songs = [
@@ -54,6 +56,8 @@ var alone_titles = [
   "While your lips </br> are still red"
 ];
 
+// copies chosen album with titles.
+// Choice is made with value got from HTML.
 var songs = [];
 var songTitles = [];
 
@@ -103,12 +107,12 @@ function playPause() {
   }
 }
 
-// automatically play the next song at the end of the audio object's duration
+// automatically play the next song at the end of the audio object's duration.
 song.addEventListener("ended", function () {
   nextSong();
 });
 
-// function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track
+// function where songIndex is incremented, song/title changes to next index value, and playPause() runs to play next track
 function nextSong() {
   songIndex++;
   if (songIndex > 3) {
