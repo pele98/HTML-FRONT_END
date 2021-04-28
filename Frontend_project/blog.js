@@ -107,4 +107,8 @@ function createBlog() {
   
   // add the blog to the HTML
   document.getElementById("blogs").innerHTML += toWrite;
+  document.getElementById("fname").value = "";
+  document.getElementById("lname").value = "";
+  document.getElementById("title").value = "";
+  document.getElementById("content").value = "";
 }
